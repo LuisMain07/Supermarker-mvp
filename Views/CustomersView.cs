@@ -16,5 +16,10 @@ namespace SupermarkerDefinitive.Views
         {
             InitializeComponent();
         }
+
+        private void BtnCloseC_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
