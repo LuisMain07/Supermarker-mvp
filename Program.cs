@@ -1,4 +1,9 @@
+using SupermarkerDefinitive._Repositories;
+using SupermarkerDefinitive.Models;
+using SupermarkerDefinitive.Presenters;
+using SupermarkerDefinitive.Properties;
 using SupermarkerDefinitive.Views;
+using System.Configuration;
 
 namespace SupermarkerDefinitive
 {
@@ -13,7 +18,11 @@ namespace SupermarkerDefinitive
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new PayModeView());
+            string sqlConnectionString = Settings.Default.SqlConnection;
+            IPayModeView view = new PayModeView();
+            IPayModeRepository repository = new PayModeRepository(sqlConnectionString);
+            new PayModePresenter(view, repository);
+            Application.Run((Form) view);
         }
     }
 }
