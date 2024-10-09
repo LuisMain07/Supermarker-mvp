@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SupermarkerDefinitive")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+395406152ef46c6ceffb3916b0bbf31435a73a38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7fc376f488f4a8bc10112ca6b8f46a997ea369d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SupermarkerDefinitive")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SupermarkerDefinitive")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

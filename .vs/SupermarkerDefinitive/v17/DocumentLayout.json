@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "E:\\Desktop\\SupermarkerDefinitive\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\supermarkerdefinitive\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\supermarkerdefinitive\\presenters\\paymodepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:presenters\\paymodepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\supermarkerdefinitive\\views\\paymodeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:views\\paymodeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|E:\\Desktop\\SupermarkerDefinitive\\views\\paymodeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:views\\paymodeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\supermarkerdefinitive\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\supermarkerdefinitive\\views\\ipaymodeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,6 +51,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PayModePresenter.cs",
+              "DocumentMoniker": "E:\\Desktop\\SupermarkerDefinitive\\Presenters\\PayModePresenter.cs",
+              "RelativeDocumentMoniker": "Presenters\\PayModePresenter.cs",
+              "ToolTip": "E:\\Desktop\\SupermarkerDefinitive\\Presenters\\PayModePresenter.cs",
+              "RelativeToolTip": "Presenters\\PayModePresenter.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwFAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:26:09.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PayModeView.cs",
+              "DocumentMoniker": "E:\\Desktop\\SupermarkerDefinitive\\Views\\PayModeView.cs",
+              "RelativeDocumentMoniker": "Views\\PayModeView.cs",
+              "ToolTip": "E:\\Desktop\\SupermarkerDefinitive\\Views\\PayModeView.cs",
+              "RelativeToolTip": "Views\\PayModeView.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAwBIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:12:10.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Desktop\\SupermarkerDefinitive\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -55,18 +89,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PayModeView.cs [Dise\u00F1o]",
               "DocumentMoniker": "E:\\Desktop\\SupermarkerDefinitive\\Views\\PayModeView.cs",
               "RelativeDocumentMoniker": "Views\\PayModeView.cs",
               "ToolTip": "E:\\Desktop\\SupermarkerDefinitive\\Views\\PayModeView.cs [Dise\u00F1o]",
               "RelativeToolTip": "Views\\PayModeView.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T04:36:38.809Z"
+              "WhenOpened": "2024-10-09T04:36:38.809Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "IPayModeView.cs",
               "DocumentMoniker": "E:\\Desktop\\SupermarkerDefinitive\\Views\\IPayModeView.cs",
               "RelativeDocumentMoniker": "Views\\IPayModeView.cs",
@@ -78,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "IPayModeRepository.cs",
               "DocumentMoniker": "E:\\Desktop\\SupermarkerDefinitive\\Models\\IPayModeRepository.cs",
               "RelativeDocumentMoniker": "Models\\IPayModeRepository.cs",
@@ -90,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "PayModeModel.cs",
               "DocumentMoniker": "E:\\Desktop\\SupermarkerDefinitive\\Models\\PayModeModel.cs",
               "RelativeDocumentMoniker": "Models\\PayModeModel.cs",
