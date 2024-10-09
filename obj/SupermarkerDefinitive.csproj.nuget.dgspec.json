@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Desktop\\SupermarkerDefinitive\\SupermarkerDefinitive.csproj": {}
+    "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\SupermarkerDefinitive.csproj": {}
   },
   "projects": {
-    "E:\\Desktop\\SupermarkerDefinitive\\SupermarkerDefinitive.csproj": {
+    "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\SupermarkerDefinitive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\SupermarkerDefinitive\\SupermarkerDefinitive.csproj",
+        "projectUniqueName": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\SupermarkerDefinitive.csproj",
         "projectName": "SupermarkerDefinitive",
-        "projectPath": "E:\\Desktop\\SupermarkerDefinitive\\SupermarkerDefinitive.csproj",
+        "projectPath": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\SupermarkerDefinitive.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\SupermarkerDefinitive\\obj\\",
+        "outputPath": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
