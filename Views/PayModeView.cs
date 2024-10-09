@@ -58,6 +58,25 @@ namespace SupermarkerDefinitive.Views
             DgPayMode.DataSource = payModeList;
         }
 
+        private static PayModeView instance;
+
+        public static PayModeView GetInstance(Form parentContainer)
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new PayModeView();
+            }
+            else
+            {
+                if (instance.WindowState == FormWindowState.Minimized)
+                {
+                    instance.WindowState = FormWindowState.Normal;
+                }
+                instance.BringToFront();
+            }
+            return instance;
+        }
+
         public string PayModeId
         {
             get { return TxtPayModeId.Text; }
