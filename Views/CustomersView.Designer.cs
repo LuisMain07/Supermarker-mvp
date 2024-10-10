@@ -58,8 +58,8 @@
             TxtCustomerPhoneNumber = new TextBox();
             label10 = new Label();
             TxtCustomerEmail = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            BtnSaveC = new Button();
+            BtnCancelC = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
@@ -129,8 +129,8 @@
             // 
             // tabPageCustomersDetail
             // 
-            tabPageCustomersDetail.Controls.Add(button2);
-            tabPageCustomersDetail.Controls.Add(button1);
+            tabPageCustomersDetail.Controls.Add(BtnCancelC);
+            tabPageCustomersDetail.Controls.Add(BtnSaveC);
             tabPageCustomersDetail.Controls.Add(TxtCustomerEmail);
             tabPageCustomersDetail.Controls.Add(label10);
             tabPageCustomersDetail.Controls.Add(TxtCustomerPhoneNumber);
@@ -369,25 +369,25 @@
             TxtCustomerEmail.Size = new Size(156, 23);
             TxtCustomerEmail.TabIndex = 15;
             // 
-            // button1
+            // BtnSaveC
             // 
-            button1.BackgroundImage = Properties.Resources.archivo;
-            button1.BackgroundImageLayout = ImageLayout.Zoom;
-            button1.Location = new Point(267, 208);
-            button1.Name = "button1";
-            button1.Size = new Size(55, 43);
-            button1.TabIndex = 16;
-            button1.UseVisualStyleBackColor = true;
+            BtnSaveC.BackgroundImage = Properties.Resources.archivo;
+            BtnSaveC.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnSaveC.Location = new Point(267, 208);
+            BtnSaveC.Name = "BtnSaveC";
+            BtnSaveC.Size = new Size(55, 43);
+            BtnSaveC.TabIndex = 16;
+            BtnSaveC.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnCancelC
             // 
-            button2.BackgroundImage = Properties.Resources.boton_x;
-            button2.BackgroundImageLayout = ImageLayout.Zoom;
-            button2.Location = new Point(351, 208);
-            button2.Name = "button2";
-            button2.Size = new Size(50, 43);
-            button2.TabIndex = 17;
-            button2.UseVisualStyleBackColor = true;
+            BtnCancelC.BackgroundImage = Properties.Resources.boton_x;
+            BtnCancelC.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnCancelC.Location = new Point(351, 208);
+            BtnCancelC.Name = "BtnCancelC";
+            BtnCancelC.Size = new Size(50, 43);
+            BtnCancelC.TabIndex = 17;
+            BtnCancelC.UseVisualStyleBackColor = true;
             // 
             // CustomersView
             // 
@@ -442,7 +442,7 @@
         private Label label9;
         private TextBox TxtCustomerEmail;
         private Label label10;
-        private Button button2;
-        private Button button1;
+        private Button BtnCancelC;
+        private Button BtnSaveC;
     }
 }
