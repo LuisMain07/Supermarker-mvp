@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\presenters\\customerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:presenters\\customerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\presenters\\paymodepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:presenters\\paymodepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\views\\customersview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:views\\customersview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,6 +63,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PayModePresenter.cs",
+              "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Presenters\\PayModePresenter.cs",
+              "RelativeDocumentMoniker": "Presenters\\PayModePresenter.cs",
+              "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Presenters\\PayModePresenter.cs",
+              "RelativeToolTip": "Presenters\\PayModePresenter.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAuwIUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T16:12:23.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerPresenter.cs",
+              "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Presenters\\CustomerPresenter.cs",
+              "RelativeDocumentMoniker": "Presenters\\CustomerPresenter.cs",
+              "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Presenters\\CustomerPresenter.cs",
+              "RelativeToolTip": "Presenters\\CustomerPresenter.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAkwFAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T16:11:47.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PayModeView.cs",
               "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Views\\PayModeView.cs",
               "RelativeDocumentMoniker": "Views\\PayModeView.cs",
@@ -67,20 +101,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CustomersView.cs",
               "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Views\\CustomersView.cs",
               "RelativeDocumentMoniker": "Views\\CustomersView.cs",
               "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Views\\CustomersView.cs",
               "RelativeToolTip": "Views\\CustomersView.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T15:43:54.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CustomersView.cs [Dise\u00F1o]",
               "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Views\\CustomersView.cs",
               "RelativeDocumentMoniker": "Views\\CustomersView.cs",
@@ -92,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ICustomersViews.cs",
               "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Views\\ICustomersViews.cs",
               "RelativeDocumentMoniker": "Views\\ICustomersViews.cs",
@@ -105,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ICustomersRepository.cs",
               "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Models\\ICustomersRepository.cs",
               "RelativeDocumentMoniker": "Models\\ICustomersRepository.cs",
@@ -117,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "CustomersModel.cs",
               "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Models\\CustomersModel.cs",
               "RelativeDocumentMoniker": "Models\\CustomersModel.cs",
@@ -129,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
