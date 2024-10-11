@@ -22,12 +22,12 @@ namespace SupermarkerDefinitive.Presenters
             this.view = view;
             this.repository = repository;
 
-            this.view.SearchEvent += SearchPayMode;
-            this.view.AddNewEvent += AddNewPayMode;
-            this.view.EditEvent += LoadSelectPayModeToEdit;
-            this.view.DeleteEvent += DeleteSelectedPayMode;
-            this.view.SaveEvent += SavePayMode;
-            this.view.CancelEvent += CancelAction;
+            this.view.SearchEventC += SearchPayMode;
+            this.view.AddNewEventC += AddNewPayMode;
+            this.view.EditEventC += LoadSelectPayModeToEdit;
+            this.view.DeleteEventC += DeleteSelectedPayMode;
+            this.view.SaveEventC += SavePayMode;
+            this.view.CancelEventC += CancelAction;
 
             this.view.SetPayModeListBildingSource(CustomerBindingSource);
 
@@ -69,10 +69,10 @@ namespace SupermarkerDefinitive.Presenters
 
         private void SearchPayMode(object? sender, EventArgs e)
         {
-            bool emptyValue = string.IsNullOrWhiteSpace(this.view.SearchValue);
+            bool emptyValue = string.IsNullOrWhiteSpace(this.view.SearchValueC);
             if (emptyValue == false)
             {
-                customerList = repository.GetByValue(this.view.SearchValue);
+                customerList = repository.GetByValue(this.view.SearchValueC);
             }
             else
             {

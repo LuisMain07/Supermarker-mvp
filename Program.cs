@@ -17,9 +17,8 @@ namespace SupermarkerDefinitive
         {
             ApplicationConfiguration.Initialize();
             string sqlConnectionString = Settings.Default.SqlConnection;
-            ICustomersViews view = new CustomersView();
-            ICustomersRepository repository = new CustomerRepository(sqlConnectionString);
-            new CustomerPresenter(view, repository);
+            IMainView view = new MainView();
+            new MainPresenter(view, sqlConnectionString);
             Application.Run((Form) view);
 
             /*

@@ -17,17 +17,17 @@ namespace SupermarkerDefinitive.Views
         string CustomersPhone_number { get; set; }
         string CustomersEmail { get; set; }
 
-        string SearchValue { get; set; }
-        bool IsEdit { get; set; }
-        bool IsSuccessful { get; set; }
-        string Message { get; set; }
+        string SearchValueC { get; set; }
+        bool IsEditC { get; set; }
+        bool IsSuccessfulC { get; set; }
+        string MessageC { get; set; }
 
-        event EventHandler SearchEvent;
-        event EventHandler AddNewEvent;
-        event EventHandler EditEvent;
-        event EventHandler DeleteEvent;
-        event EventHandler SaveEvent;
-        event EventHandler CancelEvent;
+        event EventHandler SearchEventC;
+        event EventHandler AddNewEventC;
+        event EventHandler EditEventC;
+        event EventHandler DeleteEventC;
+        event EventHandler SaveEventC;
+        event EventHandler CancelEventC;
 
         void SetPayModeListBildingSource(BindingSource CustomersList);
         void Show();

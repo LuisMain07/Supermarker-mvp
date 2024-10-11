@@ -12,27 +12,29 @@ namespace SupermarkerDefinitive.Views
 {
     public partial class CustomersView : Form, ICustomersViews
     {
-        private bool isEdit;
-        private bool isSuccessful;
-        private string message;
+        private bool isEditC;
+        private bool isSuccessfulC;
+        private string messageC;
 
         public CustomersView()
         {
             InitializeComponent();
-            AssociateAndRaiseViewEvent();
+            AssociateAndRaiseViewEventC();
 
             tabControl1.TabPages.Remove(tabPageCustomersDetail);
+
+            BtnCloseC.Click += delegate { this.Close(); };
         }
 
-        private void AssociateAndRaiseViewEvent()
+        private void AssociateAndRaiseViewEventC()
         {
-            BtnSearchC.Click += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
+            BtnSearchC.Click += delegate { SearchEventC?.Invoke(this, EventArgs.Empty); };
 
             TxtSearchC.KeyDown += (s, e) =>
             {
                 if (e.KeyCode == Keys.Enter)
                 {
-                    SearchEvent?.Invoke(this, EventArgs.Empty);
+                    SearchEventC?.Invoke(this, EventArgs.Empty);
                 }
             };
         }
@@ -85,63 +87,63 @@ namespace SupermarkerDefinitive.Views
             set { TxtCustomerEmail.Text = value; }
         }
 
-        public string SearchValue
+        public string SearchValueC
         {
             get { return TxtSearchC.Text; }
             set { TxtSearchC.Text = value; }
         }
 
-        public bool IsEdit
+        public bool IsEditC
         {
-            get { return isEdit; }
-            set { isEdit = value; }
+            get { return isEditC; }
+            set { isEditC = value; }
         }
 
-        public bool IsSuccessful
+        public bool IsSuccessfulC
         {
-            get { return isSuccessful; }
-            set { isSuccessful = value; }
+            get { return isSuccessfulC; }
+            set { isSuccessfulC = value; }
         }
 
-        public string Message
+        public string MessageC
         {
-            get { return message; }
-            set { message = value; }
+            get { return messageC; }
+            set { messageC = value; }
         }
 
-        public event EventHandler SearchEvent;
-        public event EventHandler AddNewEvent;
-        public event EventHandler EditEvent;
-        public event EventHandler DeleteEvent;
-        public event EventHandler SaveEvent;
-        public event EventHandler CancelEvent;
+        public event EventHandler SearchEventC;
+        public event EventHandler AddNewEventC;
+        public event EventHandler EditEventC;
+        public event EventHandler DeleteEventC;
+        public event EventHandler SaveEventC;
+        public event EventHandler CancelEventC;
 
         public void SetPayModeListBildingSource(BindingSource CustomersList)
         {
             DgCustomers.DataSource = CustomersList;
         }
 
-        private static CustomersView instance;
+        private static CustomersView instanceC;
 
         public static CustomersView GetInstance(Form parentContainer)
         {
-            if (instance == null || instance.IsDisposed)
+            if (instanceC == null || instanceC.IsDisposed)
             {
-                instance = new CustomersView();
-                instance.MdiParent = parentContainer;
+                instanceC = new CustomersView();
+                instanceC.MdiParent = parentContainer;
 
-                instance.FormBorderStyle = FormBorderStyle.None;
-                instance.Dock = DockStyle.Fill;
+                instanceC.FormBorderStyle = FormBorderStyle.None;
+                instanceC.Dock = DockStyle.Fill;
             }
             else
             {
-                if (instance.WindowState == FormWindowState.Minimized)
+                if (instanceC.WindowState == FormWindowState.Minimized)
                 {
-                    instance.WindowState = FormWindowState.Normal;
+                    instanceC.WindowState = FormWindowState.Normal;
                 }
-                instance.BringToFront();
+                instanceC.BringToFront();
             }
-            return instance;
+            return instanceC;
         }
 
         private void BtnCloseC_Click(object sender, EventArgs e)
