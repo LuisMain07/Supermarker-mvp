@@ -121,6 +121,29 @@ namespace SupermarkerDefinitive.Views
             DgCustomers.DataSource = CustomersList;
         }
 
+        private static CustomersView instance;
+
+        public static CustomersView GetInstance(Form parentContainer)
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new CustomersView();
+                instance.MdiParent = parentContainer;
+
+                instance.FormBorderStyle = FormBorderStyle.None;
+                instance.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                if (instance.WindowState == FormWindowState.Minimized)
+                {
+                    instance.WindowState = FormWindowState.Normal;
+                }
+                instance.BringToFront();
+            }
+            return instance;
+        }
+
         private void BtnCloseC_Click(object sender, EventArgs e)
         {
 

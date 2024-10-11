@@ -20,6 +20,7 @@ namespace SupermarkerDefinitive.Presenters
             this.sqlConnectionString = sqlConnectionString;
 
             this.mainView.ShowPayModeView += ShowPayModeView;
+            this.mainView.ShowCustomerView += ShowCustomerView;
         }
 
         private void ShowPayModeView(object? sender, EventArgs e)
@@ -27,6 +28,12 @@ namespace SupermarkerDefinitive.Presenters
             IPayModeView view = PayModeView.GetInstance((MainView)mainView);
             IPayModeRepository repository = new PayModeRepository(sqlConnectionString);
             new PayModePresenter(view, repository);
-        }   
+        }
+        private void ShowCustomerView(object? sender, EventArgs e)
+        {
+            ICustomersViews view = CustomersView.GetInstance((MainView)mainView);
+            ICustomersRepository repository = new CustomerRepository(sqlConnectionString);
+            new CustomerPresenter(view, repository);
+        }
     }
 }
