@@ -15,13 +15,20 @@ namespace SupermarkerDefinitive
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+            string sqlConnectionString = Settings.Default.SqlConnection;
+            ICustomersViews view = new CustomersView();
+            ICustomersRepository repository = new CustomerRepository(sqlConnectionString);
+            new CustomerPresenter(view, repository);
+            Application.Run((Form) view);
+
+            /*
             ApplicationConfiguration.Initialize();
             string sqlConnectionString = Settings.Default.SqlConnection;
             IMainView view = new MainView();
             new MainPresenter(view, sqlConnectionString);
             Application.Run((Form) view);
+             */
         }
     }
 }
