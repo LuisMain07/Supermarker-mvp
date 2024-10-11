@@ -385,8 +385,11 @@
             // 
             TxtCustomerId.Location = new Point(23, 30);
             TxtCustomerId.Name = "TxtCustomerId";
+            TxtCustomerId.ReadOnly = true;
             TxtCustomerId.Size = new Size(156, 23);
             TxtCustomerId.TabIndex = 1;
+            TxtCustomerId.Text = "0";
+            TxtCustomerId.TextAlign = HorizontalAlignment.Right;
             // 
             // label3
             // 

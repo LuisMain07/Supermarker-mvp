@@ -36,7 +36,7 @@ namespace SupermarkerDefinitive.Models
 
         [DisplayName("Customers Birthday")]
         [Required(ErrorMessage = "Birthday is required")]
-        public DateTime Birthday { get; set; }
+        public string Birthday { get; set; }
 
         [DisplayName("Customers Phone_Numbers")]
         [Required(ErrorMessage = "Phone_Number is required")]

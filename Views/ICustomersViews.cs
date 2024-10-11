@@ -29,7 +29,7 @@ namespace SupermarkerDefinitive.Views
         event EventHandler SaveEventC;
         event EventHandler CancelEventC;
 
-        void SetPayModeListBildingSource(BindingSource CustomersList);
+        void SetCustomerListBildingSource(BindingSource CustomersList);
         void Show();
     }
 }

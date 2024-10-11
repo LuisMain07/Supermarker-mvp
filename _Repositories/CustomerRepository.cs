@@ -19,17 +19,64 @@ namespace SupermarkerDefinitive._Repositories
 
         public void Add(CustomersModel customersModel)
         {
-            throw new NotImplementedException();
+            using (var connectionC = new SqlConnection(connectionString))
+            using (var commandC = new SqlCommand())
+            {
+                connectionC.Open();
+                commandC.Connection = connectionC;
+                commandC.CommandText = "INSERT INTO Customers VALUES (@Document_number, @First_name, @Last_name, @Address, @Birthday, @Phone_number, @Email)";
+                commandC.Parameters.Add("@Document_number", SqlDbType.NVarChar).Value = customersModel.Document_number;
+                commandC.Parameters.Add("@First_name", SqlDbType.NVarChar).Value = customersModel.First_name;
+                commandC.Parameters.Add("@Last_name", SqlDbType.NVarChar).Value = customersModel.Last_name;
+                commandC.Parameters.Add("@Address", SqlDbType.NVarChar).Value = customersModel.Address;
+                commandC.Parameters.Add("@Birthday", SqlDbType.NVarChar).Value = customersModel.Birthday;
+                commandC.Parameters.Add("@Phone_number", SqlDbType.NVarChar).Value = customersModel.Phone_number;
+                commandC.Parameters.Add("@Email", SqlDbType.NVarChar).Value = customersModel.Email;
+
+                commandC.ExecuteNonQuery();
+            }
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            using (var connectionC = new SqlConnection(connectionString))
+            using (var commandC = new SqlCommand())
+            {
+                connectionC.Open();
+                commandC.Connection = connectionC;
+                commandC.CommandText = "DELETE FROM Customers WHERE Customers_Id = @Id";
+                commandC.Parameters.Add("@Id", SqlDbType.Int).Value = id;
+                commandC.ExecuteNonQuery();
+            }
         }
 
         public void Edit(CustomersModel customersModel)
         {
-            throw new NotImplementedException();
+            using (var connectionC = new SqlConnection(connectionString))
+            using (var commandC = new SqlCommand())
+            {
+                connectionC.Open();
+                commandC.Connection = connectionC;
+                commandC.CommandText = @"UPDATE Customers 
+                                       SET Customers_Document_number =@Document_number,
+                                       Customers_First_name = @First_name,
+                                       Customers_Last_name = @Last_name,
+                                       Customers_Address = @Address,
+                                       Customers_Birthday = @Birthday,
+                                       Customers_Phone_number = @Phone_number,
+                                       Customers_Email = @Email
+                                       WHERE Customers_Id = @Id";
+                commandC.Parameters.Add("@Document_number", SqlDbType.NVarChar).Value = customersModel.Document_number;
+                commandC.Parameters.Add("@First_name", SqlDbType.NVarChar).Value = customersModel.First_name;
+                commandC.Parameters.Add("@Last_name", SqlDbType.NVarChar).Value = customersModel.Last_name;
+                commandC.Parameters.Add("@Address", SqlDbType.NVarChar).Value = customersModel.Address;
+                commandC.Parameters.Add("@Birthday", SqlDbType.NVarChar).Value = customersModel.Birthday;
+                commandC.Parameters.Add("@Phone_number", SqlDbType.NVarChar).Value = customersModel.Phone_number;
+                commandC.Parameters.Add("@Email", SqlDbType.NVarChar).Value = customersModel.Email;
+
+                commandC.Parameters.Add("@id", SqlDbType.Int).Value = customersModel.Id;
+                commandC.ExecuteNonQuery();
+            }
         }
 
         public IEnumerable<CustomersModel> GetAll()
@@ -51,7 +98,7 @@ namespace SupermarkerDefinitive._Repositories
                         customerModel.First_name = reader["Customers_First_Name"].ToString();
                         customerModel.Last_name = reader["Customers_Last_Name"].ToString();
                         customerModel.Address = reader["Customers_Address"].ToString();
-                        customerModel.Birthday = (DateTime)reader["Customers_Birthday"];
+                        customerModel.Birthday = reader["Customers_Birthday"].ToString();
                         customerModel.Phone_number = reader["Customers_Phone_number"].ToString();
                         customerModel.Email = reader["Customers_Email"].ToString();
                         Customerlist.Add(customerModel);
@@ -80,12 +127,12 @@ namespace SupermarkerDefinitive._Repositories
                 {
                     {
                         var customerModel = new CustomersModel();
-                        customerModel.Id = (int)reader["Customer_Id"];//customerMode.Birthaday = (DateTime)
+                        customerModel.Id = (int)reader["Customer_Id"];
                         customerModel.Document_number = reader["Customer_Document_number"].ToString();
                         customerModel.First_name = reader["Customer_First_name"].ToString();
                         customerModel.Last_name = reader["Customer_Last_name"].ToString();
                         customerModel.Address = reader["Customer_Address"].ToString();
-                        customerModel.Birthday = (DateTime)reader["Customer_Birthday"];
+                        customerModel.Birthday = reader["Customer_Birthday"].ToString();
                         customerModel.Phone_number = reader["Customer_Phone_number"].ToString();
                         customerModel.Email = reader["Customer_Email"].ToString();
                         customerList.Add(customerModel);
