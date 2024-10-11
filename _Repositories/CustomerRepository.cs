@@ -40,20 +40,20 @@ namespace SupermarkerDefinitive._Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "SELECT * FROM Customers ORDER BY Customer_Id DESC";
+                command.CommandText = "SELECT * FROM Customers ORDER BY Customers_Id DESC";
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
                         var customerModel = new CustomersModel();
-                        customerModel.Id = (int)reader["Customer_Id"];//customerMode.Birthaday = (DateTime)
-                        customerModel.Document_number = reader["Customer_Document_number"].ToString();
-                        customerModel.First_name = reader["Customer_First_name"].ToString();
-                        customerModel.Last_name = reader["Customer_Last_name"].ToString();
-                        customerModel.Address = reader["Customer_Address"].ToString();
-                        customerModel.Birthday = (DateTime)reader["Customer_Birthday"];
-                        customerModel.Phone_number = reader["Customer_Phone_number"].ToString();
-                        customerModel.Email = reader["Customer_Email"].ToString();
+                        customerModel.Id = (int)reader["Customers_Id"];
+                        customerModel.Document_number = reader["Customers_Document_number"].ToString();
+                        customerModel.First_name = reader["Customers_First_Name"].ToString();
+                        customerModel.Last_name = reader["Customers_Last_Name"].ToString();
+                        customerModel.Address = reader["Customers_Address"].ToString();
+                        customerModel.Birthday = (DateTime)reader["Customers_Birthday"];
+                        customerModel.Phone_number = reader["Customers_Phone_number"].ToString();
+                        customerModel.Email = reader["Customers_Email"].ToString();
                         Customerlist.Add(customerModel);
                     }
                 }

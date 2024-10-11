@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\_repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:_repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\models\\customersmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:models\\customersmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\views\\icustomersviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:views\\icustomersviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\_repositories\\paymoderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:_repositories\\paymoderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\_repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:_repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\models\\customersmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:models\\customersmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\_repositories\\paymoderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:_repositories\\paymoderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,27 +46,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PayModeRepository.cs",
               "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\_Repositories\\PayModeRepository.cs",
               "RelativeDocumentMoniker": "_Repositories\\PayModeRepository.cs",
               "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\_Repositories\\PayModeRepository.cs",
               "RelativeToolTip": "_Repositories\\PayModeRepository.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAcwHEAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAswHEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T16:25:53.784Z"
+              "WhenOpened": "2024-10-10T16:25:53.784Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CustomerRepository.cs",
               "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\_Repositories\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "_Repositories\\CustomerRepository.cs",
               "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\_Repositories\\CustomerRepository.cs",
               "RelativeToolTip": "_Repositories\\CustomerRepository.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAUwFoAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwDYAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T16:26:52.855Z"
+              "WhenOpened": "2024-10-10T16:26:52.855Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -76,21 +78,23 @@
               "RelativeDocumentMoniker": "Views\\ICustomersViews.cs",
               "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Views\\ICustomersViews.cs",
               "RelativeToolTip": "Views\\ICustomersViews.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswA0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T20:52:24.43Z"
+              "WhenOpened": "2024-10-09T20:52:24.43Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "CustomersModel.cs",
               "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Models\\CustomersModel.cs",
               "RelativeDocumentMoniker": "Models\\CustomersModel.cs",
               "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Models\\CustomersModel.cs",
               "RelativeToolTip": "Models\\CustomersModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAmwBMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T20:43:55.061Z"
+              "WhenOpened": "2024-10-09T20:43:55.061Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -100,7 +104,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T04:45:47.271Z",
               "EditorCaption": ""
