@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\models\\icategoriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:models\\icategoriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\views\\icategoriesview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:views\\icategoriesview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\models\\icustomersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:models\\icustomersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\views\\icustomersviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:views\\icustomersviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,27 +35,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ICustomersRepository.cs",
-              "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Models\\ICustomersRepository.cs",
-              "RelativeDocumentMoniker": "Models\\ICustomersRepository.cs",
-              "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Models\\ICustomersRepository.cs",
-              "RelativeToolTip": "Models\\ICustomersRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Title": "ICustomersViews.cs",
+              "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Views\\ICustomersViews.cs",
+              "RelativeDocumentMoniker": "Views\\ICustomersViews.cs",
+              "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Views\\ICustomersViews.cs",
+              "RelativeToolTip": "Views\\ICustomersViews.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T22:08:26.144Z",
+              "WhenOpened": "2024-10-12T22:13:38.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ICategoriesRepository.cs",
-              "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Models\\ICategoriesRepository.cs",
-              "RelativeDocumentMoniker": "Models\\ICategoriesRepository.cs",
-              "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Models\\ICategoriesRepository.cs",
-              "RelativeToolTip": "Models\\ICategoriesRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Title": "ICategoriesView.cs",
+              "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Views\\ICategoriesView.cs",
+              "RelativeDocumentMoniker": "Views\\ICategoriesView.cs",
+              "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Views\\ICategoriesView.cs",
+              "RelativeToolTip": "Views\\ICategoriesView.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T22:08:18.006Z",
+              "WhenOpened": "2024-10-12T22:13:37.254Z",
               "EditorCaption": ""
             }
           ]
