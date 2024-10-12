@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\_repositories\\baserepositoryca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:_repositories\\baserepositoryca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\_repositories\\categoriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:_repositories\\categoriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\_repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:_repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\presenters\\categoriespresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:presenters\\categoriespresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|e:\\desktop\\parcial 2\\supermarkerdefinitive\\presenters\\customerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC09A5D-3CB9-42C4-BD22-7E508556AFE3}|SupermarkerDefinitive.csproj|solutionrelative:presenters\\customerpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,67 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BaseRepositoryCA.cs",
-              "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\_Repositories\\BaseRepositoryCA.cs",
-              "RelativeDocumentMoniker": "_Repositories\\BaseRepositoryCA.cs",
-              "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\_Repositories\\BaseRepositoryCA.cs",
-              "RelativeToolTip": "_Repositories\\BaseRepositoryCA.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T23:32:29.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CustomerRepository.cs",
               "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\_Repositories\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "_Repositories\\CustomerRepository.cs",
               "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\_Repositories\\CustomerRepository.cs",
               "RelativeToolTip": "_Repositories\\CustomerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAmwI0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T23:31:45.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CategoriesRepository.cs",
               "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\_Repositories\\CategoriesRepository.cs",
               "RelativeDocumentMoniker": "_Repositories\\CategoriesRepository.cs",
               "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\_Repositories\\CategoriesRepository.cs",
               "RelativeToolTip": "_Repositories\\CategoriesRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAwwE8AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T23:30:09.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CustomerPresenter.cs",
-              "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Presenters\\CustomerPresenter.cs",
-              "RelativeDocumentMoniker": "Presenters\\CustomerPresenter.cs",
-              "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Presenters\\CustomerPresenter.cs",
-              "RelativeToolTip": "Presenters\\CustomerPresenter.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAuwIgAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T23:19:08.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CategoriesPresenter.cs",
-              "DocumentMoniker": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Presenters\\CategoriesPresenter.cs",
-              "RelativeDocumentMoniker": "Presenters\\CategoriesPresenter.cs",
-              "ToolTip": "E:\\Desktop\\Parcial 2\\SupermarkerDefinitive\\Presenters\\CategoriesPresenter.cs",
-              "RelativeToolTip": "Presenters\\CategoriesPresenter.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAEwFAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T23:18:42.893Z",
               "EditorCaption": ""
             }
           ]
