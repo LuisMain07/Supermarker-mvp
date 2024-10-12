@@ -70,7 +70,7 @@ namespace SupermarkerDefinitive.Presenters
                 else
                 {
                     repository.Add(customer);
-                    view.MessageC = "Customer added successfuly";
+                    view.MessageC = "Customer added successfuly";   
                 }
                 view.IsSuccessfulC = true;
                 loadAllCustomerList();

@@ -97,14 +97,14 @@ namespace SupermarkerDefinitive._Repositories
                 cmd.Connection = connection;
                 cmd.CommandText = @"SELECT * FROM PayMode
                              WHERE Pay_Mode_Id=@id or Pay_Mode_Name LIKE @name+ '%'
-                             ORDER Ny Pay_Mode_Id DESC";
+                             ORDER By Pay_Mode_Id DESC";
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = payModeid;
                 cmd.Parameters.Add("@name", SqlDbType.NVarChar).Value = payModeName;
                 using (var reader = cmd.ExecuteReader())
                 {
                     {
                         var payModeModel = new PayModeModel();
-                        payModeModel.Id = (int)reader["Pay_Mode_ID"];
+                        payModeModel.Id = (int)reader["Pay_Mode_Id"];
                         payModeModel.Name = reader["Pay_Mode_Name"].ToString();
                         payModeModel.Observation = reader["Pay_Mode_Observation"].ToString();
                         payModeList.Add(payModeModel);
