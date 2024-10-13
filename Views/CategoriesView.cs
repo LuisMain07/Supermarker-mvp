@@ -90,5 +90,28 @@ namespace SupermarkerDefinitive.Views
         {
             DgCategories.DataSource = CategoriesList;
         }
+
+        private static CategoriesView instanceCA;
+
+        public static CategoriesView GetInstance(Form parentContainer)
+        {
+            if (instanceCA == null || instanceCA.IsDisposed)
+            {
+                instanceCA = new CategoriesView();
+                instanceCA.MdiParent = parentContainer;
+
+                instanceCA.FormBorderStyle = FormBorderStyle.None;
+                instanceCA.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                if (instanceCA.WindowState == FormWindowState.Minimized)
+                {
+                    instanceCA.WindowState = FormWindowState.Normal;
+                }
+                instanceCA.BringToFront();
+            }
+            return instanceCA;
+        }
     }
 }

@@ -42,14 +42,14 @@
             TxtSearchCA = new TextBox();
             label2 = new Label();
             tabPageCategoriesDetail = new TabPage();
+            BtnCancelCA = new Button();
+            BtnSaveCA = new Button();
+            TxtCategoriesDescription = new TextBox();
+            TxtCategoriesName = new TextBox();
+            TxtCategoriesId = new TextBox();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
-            TxtCategoriesId = new TextBox();
-            TxtCategoriesName = new TextBox();
-            TxtCategoriesDescription = new TextBox();
-            BtnSaveCA = new Button();
-            BtnCancelCA = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
@@ -161,6 +161,7 @@
             // 
             DgCategories.AllowUserToAddRows = false;
             DgCategories.AllowUserToDeleteRows = false;
+            DgCategories.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DgCategories.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgCategories.Location = new Point(8, 91);
             DgCategories.Name = "DgCategories";
@@ -213,6 +214,51 @@
             tabPageCategoriesDetail.Text = "Categories Detail";
             tabPageCategoriesDetail.UseVisualStyleBackColor = true;
             // 
+            // BtnCancelCA
+            // 
+            BtnCancelCA.BackgroundImage = Properties.Resources.borrar1;
+            BtnCancelCA.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnCancelCA.Location = new Point(149, 245);
+            BtnCancelCA.Name = "BtnCancelCA";
+            BtnCancelCA.Size = new Size(92, 56);
+            BtnCancelCA.TabIndex = 7;
+            BtnCancelCA.UseVisualStyleBackColor = true;
+            // 
+            // BtnSaveCA
+            // 
+            BtnSaveCA.BackgroundImage = Properties.Resources.guardar;
+            BtnSaveCA.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnSaveCA.Location = new Point(21, 245);
+            BtnSaveCA.Name = "BtnSaveCA";
+            BtnSaveCA.Size = new Size(92, 56);
+            BtnSaveCA.TabIndex = 6;
+            BtnSaveCA.UseVisualStyleBackColor = true;
+            // 
+            // TxtCategoriesDescription
+            // 
+            TxtCategoriesDescription.Location = new Point(21, 138);
+            TxtCategoriesDescription.Multiline = true;
+            TxtCategoriesDescription.Name = "TxtCategoriesDescription";
+            TxtCategoriesDescription.PlaceholderText = "Search Categories Description";
+            TxtCategoriesDescription.Size = new Size(220, 89);
+            TxtCategoriesDescription.TabIndex = 5;
+            // 
+            // TxtCategoriesName
+            // 
+            TxtCategoriesName.Location = new Point(21, 85);
+            TxtCategoriesName.Name = "TxtCategoriesName";
+            TxtCategoriesName.PlaceholderText = "Search Categories Name";
+            TxtCategoriesName.Size = new Size(220, 23);
+            TxtCategoriesName.TabIndex = 4;
+            // 
+            // TxtCategoriesId
+            // 
+            TxtCategoriesId.Location = new Point(21, 32);
+            TxtCategoriesId.Name = "TxtCategoriesId";
+            TxtCategoriesId.PlaceholderText = "Search Categories Id";
+            TxtCategoriesId.Size = new Size(128, 23);
+            TxtCategoriesId.TabIndex = 3;
+            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -239,51 +285,6 @@
             label3.Size = new Size(114, 15);
             label3.TabIndex = 0;
             label3.Text = "Search Categories Id";
-            // 
-            // TxtCategoriesId
-            // 
-            TxtCategoriesId.Location = new Point(21, 32);
-            TxtCategoriesId.Name = "TxtCategoriesId";
-            TxtCategoriesId.PlaceholderText = "Search Categories Id";
-            TxtCategoriesId.Size = new Size(128, 23);
-            TxtCategoriesId.TabIndex = 3;
-            // 
-            // TxtCategoriesName
-            // 
-            TxtCategoriesName.Location = new Point(21, 85);
-            TxtCategoriesName.Name = "TxtCategoriesName";
-            TxtCategoriesName.PlaceholderText = "Search Categories Name";
-            TxtCategoriesName.Size = new Size(220, 23);
-            TxtCategoriesName.TabIndex = 4;
-            // 
-            // TxtCategoriesDescription
-            // 
-            TxtCategoriesDescription.Location = new Point(21, 138);
-            TxtCategoriesDescription.Multiline = true;
-            TxtCategoriesDescription.Name = "TxtCategoriesDescription";
-            TxtCategoriesDescription.PlaceholderText = "Search Categories Description";
-            TxtCategoriesDescription.Size = new Size(220, 89);
-            TxtCategoriesDescription.TabIndex = 5;
-            // 
-            // BtnSaveCA
-            // 
-            BtnSaveCA.BackgroundImage = Properties.Resources.guardar;
-            BtnSaveCA.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnSaveCA.Location = new Point(21, 245);
-            BtnSaveCA.Name = "BtnSaveCA";
-            BtnSaveCA.Size = new Size(92, 56);
-            BtnSaveCA.TabIndex = 6;
-            BtnSaveCA.UseVisualStyleBackColor = true;
-            // 
-            // BtnCancelCA
-            // 
-            BtnCancelCA.BackgroundImage = Properties.Resources.borrar1;
-            BtnCancelCA.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnCancelCA.Location = new Point(149, 245);
-            BtnCancelCA.Name = "BtnCancelCA";
-            BtnCancelCA.Size = new Size(92, 56);
-            BtnCancelCA.TabIndex = 7;
-            BtnCancelCA.UseVisualStyleBackColor = true;
             // 
             // CategoriesView
             // 
