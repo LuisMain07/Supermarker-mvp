@@ -20,14 +20,6 @@ namespace SupermarkerDefinitive
             IMainView view = new MainView();
             new MainPresenter(view, sqlConnectionString);
             Application.Run((Form) view);
-
-            /*
-            ApplicationConfiguration.Initialize();
-            string sqlConnectionString = Settings.Default.SqlConnection;
-            IMainView view = new MainView();
-            new MainPresenter(view, sqlConnectionString);
-            Application.Run((Form) view);
-             */
         }
     }
 }

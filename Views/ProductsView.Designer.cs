@@ -286,8 +286,11 @@
             TxtProductsId.Location = new Point(8, 32);
             TxtProductsId.Name = "TxtProductsId";
             TxtProductsId.PlaceholderText = "Search Id";
+            TxtProductsId.ReadOnly = true;
             TxtProductsId.Size = new Size(175, 23);
             TxtProductsId.TabIndex = 5;
+            TxtProductsId.Text = "0";
+            TxtProductsId.TextAlign = HorizontalAlignment.Right;
             // 
             // label7
             // 

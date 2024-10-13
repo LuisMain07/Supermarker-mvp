@@ -103,6 +103,16 @@ namespace SupermarkerDefinitive.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap agromercado1 {
+            get {
+                object obj = ResourceManager.GetObject("agromercado1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap archivo {
             get {
                 object obj = ResourceManager.GetObject("archivo", resourceCulture);
@@ -116,6 +126,36 @@ namespace SupermarkerDefinitive.Properties {
         internal static System.Drawing.Bitmap basura {
             get {
                 object obj = ResourceManager.GetObject("basura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bienvenido_de_nuevo {
+            get {
+                object obj = ResourceManager.GetObject("bienvenido-de-nuevo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bienvenido_de_nuevo1 {
+            get {
+                object obj = ResourceManager.GetObject("bienvenido-de-nuevo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bienvenido_de_nuevo2 {
+            get {
+                object obj = ResourceManager.GetObject("bienvenido-de-nuevo2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -346,6 +386,16 @@ namespace SupermarkerDefinitive.Properties {
         internal static System.Drawing.Bitmap nota {
             get {
                 object obj = ResourceManager.GetObject("nota", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pagina_de_bienvenida {
+            get {
+                object obj = ResourceManager.GetObject("pagina-de-bienvenida", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
