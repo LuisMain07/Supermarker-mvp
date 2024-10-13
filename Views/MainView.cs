@@ -18,12 +18,13 @@ namespace SupermarkerDefinitive.Views
             BtnPayMode.Click += delegate { ShowPayModeView?.Invoke(this, EventArgs.Empty); };
             BtnCustomers.Click += delegate { ShowCustomerView?.Invoke(this, EventArgs.Empty); };
             BtnCategories.Click += delegate { ShowCategoriesView?.Invoke(this, EventArgs.Empty); };
+            BtnProducts.Click += delegate { ShowProductsView?.Invoke(this, EventArgs.Empty); };
 
             BtnExit.Click += delegate { this.Close(); };
         }
 
         public event EventHandler ShowPayModeView;
-        public event EventHandler ShowProductView;
+        public event EventHandler ShowProductsView;
         public event EventHandler ShowCustomerView;
         public event EventHandler ShowCategoriesView;
     }

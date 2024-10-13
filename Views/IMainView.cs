@@ -9,7 +9,7 @@ namespace SupermarkerDefinitive.Views
     internal interface IMainView
     {
         event EventHandler ShowPayModeView;
-        event EventHandler ShowProductView;
+        event EventHandler ShowProductsView;
         event EventHandler ShowCustomerView;
         event EventHandler ShowCategoriesView;
 

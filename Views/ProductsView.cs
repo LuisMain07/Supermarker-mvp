@@ -102,5 +102,28 @@ namespace SupermarkerDefinitive.Views
         {
             DgProducts.DataSource = ProductsList;
         }
+
+        private static ProductsView instancePR;
+
+        public static ProductsView GetInstance(Form parentContainer)
+        {
+            if (instancePR == null || instancePR.IsDisposed)
+            {
+                instancePR = new ProductsView();
+                instancePR.MdiParent = parentContainer;
+
+                instancePR.FormBorderStyle = FormBorderStyle.None;
+                instancePR.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                if (instancePR.WindowState == FormWindowState.Minimized)
+                {
+                    instancePR.WindowState = FormWindowState.Normal;
+                }
+                instancePR.BringToFront();
+            }
+            return instancePR;
+        }
     }
 }
