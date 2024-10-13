@@ -43,32 +43,99 @@ namespace SupermarkerDefinitive.Presenters
 
         private void CancelActionPR(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            CleanViewFieldsPR();
         }
 
         private void SaveProducts(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var products = new ProductsModel();
+            products.Id = Convert.ToInt32(view.ProductsId);
+            products.Name = view.ProductsName;
+            products.Price = view.ProductsPrice;
+            products.Stock = view.ProductsStock;
+            products.Category_id = view.ProductsCategoryId;
+
+            try
+            {
+                new Common.ModelDataValidation().Validate(products);
+                if (view.IsEditPR)
+                {
+                    repository.Edit(products);
+                    view.MessagePR = "Product edited successfuly";
+                }
+                else
+                {
+                    repository.Add(products);
+                    view.MessagePR = "Product added successfuly";
+                }
+                view.IsSuccessfulPR = true;
+                loadAllProductsList();
+                CleanViewFieldsPR();
+            }
+            catch (Exception ex)
+            {
+                view.IsSuccessfulPR = false;
+                view.MessagePR = ex.Message;
+            }
+        }
+
+        private void CleanViewFieldsPR()
+        {
+            view.ProductsId = "0";
+            view.ProductsName = "";
+            view.ProductsPrice = "";
+            view.ProductsStock = "";
+            view.ProductsCategoryId = "";
         }
 
         private void DeleteSelectedProducts(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var products = (ProductsModel)ProductsBindingSource.Current;
+
+                repository.Delete(products.Id);
+                view.IsSuccessfulPR = true;
+                view.MessagePR = "Product deleted successfully";
+                loadAllProductsList();
+            }
+            catch (Exception ex)
+            {
+                view.IsSuccessfulPR = false;
+                view.MessagePR = "An error ocurred, could not delete product";
+            }
         }
 
         private void LoadSelectProductsToEdit(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var products = (ProductsModel)ProductsBindingSource.Current;
+
+            view.ProductsId = products.Id.ToString();
+            view.ProductsName = products.Name;
+            view.ProductsPrice = products.Price;
+            view.ProductsStock = products.Price;
+            view.ProductsCategoryId = products.Category_id;
+
+            view.IsEditPR = true;
         }
 
         private void AddNewProducts(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            view.IsEditPR = false;
         }
 
         private void SearchProducts(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            bool emptyValue = string.IsNullOrWhiteSpace(this.view.SearchValuePR);
+            if (emptyValue == false)
+            {
+                productsList = repository.GetByValue(this.view.SearchValuePR);
+            }
+            else
+            {
+                productsList = repository.GetAll();
+            }
+            ProductsBindingSource.DataSource = productsList;
         }
     }
 }

@@ -38,6 +38,55 @@ namespace SupermarkerDefinitive.Views
                     SearchEventPR?.Invoke(this, EventArgs.Empty);
                 }
             };
+
+            BtnNewPR.Click += delegate {
+                AddNewEventPR?.Invoke(this, EventArgs.Empty);
+
+                tabControl1.TabPages.Remove(tabPageProductsList);
+                tabControl1.TabPages.Add(tabPageProductsDetail);
+                tabPageProductsDetail.Text = "Add new product";
+            };
+
+            BtnEditPR.Click += delegate {
+                EditEventPR?.Invoke(this, EventArgs.Empty);
+
+                tabControl1.TabPages.Remove(tabPageProductsList);
+                tabControl1.TabPages.Add(tabPageProductsDetail);
+                tabPageProductsDetail.Text = "Edit product";
+            };
+
+            BtnDeletePR.Click += delegate {
+                var result = MessageBox.Show(
+                    "Are you sure you want to delete the selected product",
+                    "Warning",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+
+                    DeleteEventPR?.Invoke(this, EventArgs.Empty);
+                    MessageBox.Show(MessagePR);
+                }
+
+            };
+
+            BtnSavePR.Click += delegate {
+                SaveEventPR?.Invoke(this, EventArgs.Empty);
+
+                if (isSuccessfulPR)
+                {
+                    tabControl1.TabPages.Remove(tabPageProductsDetail);
+                    tabControl1.TabPages.Add(tabPageProductsList);
+                }
+                MessageBox.Show(MessagePR);
+            };
+
+            BtnCancelPR.Click += delegate {
+                CancelEventPR?.Invoke(this, EventArgs.Empty);
+
+                tabControl1.TabPages.Remove(tabPageProductsDetail);
+                tabControl1.TabPages.Add(tabPageProductsList);
+            };
         }
 
         public string ProductsId
