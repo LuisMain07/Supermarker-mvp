@@ -23,6 +23,8 @@ namespace SupermarkerDefinitive.Views
             AssociateAndRaiseViewEventC();
 
             tabControl1.TabPages.Remove(tabPageProductsDetail);
+
+            BtnClosePR.Click += delegate { this.Close(); };
         }
 
         private void AssociateAndRaiseViewEventC()
