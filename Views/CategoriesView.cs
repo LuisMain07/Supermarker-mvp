@@ -22,6 +22,8 @@ namespace SupermarkerDefinitive.Views
             AssociateAndRaiseViewEventC();
 
             tabControl1.TabPages.Remove(tabPageCategoriesDetail);
+
+            BtnCloseCA.Click += delegate { this.Close(); };
         }
 
         private void AssociateAndRaiseViewEventC()
@@ -34,6 +36,55 @@ namespace SupermarkerDefinitive.Views
                 {
                     SearchEventCA?.Invoke(this, EventArgs.Empty);
                 }
+            };
+
+            BtnNewCA.Click += delegate {
+                AddNewEventCA?.Invoke(this, EventArgs.Empty);
+
+                tabControl1.TabPages.Remove(tabPageCategoriesList);
+                tabControl1.TabPages.Add(tabPageCategoriesDetail);
+                tabPageCategoriesDetail.Text = "Add new categories";
+            };
+
+            BtnEditCA.Click += delegate {
+                EditEventCA?.Invoke(this, EventArgs.Empty);
+
+                tabControl1.TabPages.Remove(tabPageCategoriesList);
+                tabControl1.TabPages.Add(tabPageCategoriesDetail);
+                tabPageCategoriesDetail.Text = "Edit categories";
+            };
+
+            BtnDeleteCA.Click += delegate {
+                var result = MessageBox.Show(
+                    "Are you sure you want to delete the selected categories",
+                    "Warning",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+
+                    DeleteEventCA?.Invoke(this, EventArgs.Empty);
+                    MessageBox.Show(MessageCA);
+                }
+
+            };
+
+            BtnSaveCA.Click += delegate {
+                SaveEventCA?.Invoke(this, EventArgs.Empty);
+
+                if (isSuccessfulCA)
+                {
+                    tabControl1.TabPages.Remove(tabPageCategoriesDetail);
+                    tabControl1.TabPages.Add(tabPageCategoriesList);
+                }
+                MessageBox.Show(messageCA);
+            };
+
+            BtnCancelCA.Click += delegate {
+                CancelEventCA?.Invoke(this, EventArgs.Empty);
+
+                tabControl1.TabPages.Remove(tabPageCategoriesDetail);
+                tabControl1.TabPages.Add(tabPageCategoriesList);
             };
         }
 
@@ -69,8 +120,8 @@ namespace SupermarkerDefinitive.Views
 
         public bool IsSuccessfulCA
         {
-            get { return IsSuccessfulCA; }
-            set { IsSuccessfulCA = value; }
+            get { return isSuccessfulCA; }
+            set { isSuccessfulCA = value; }
         }
 
         public string MessageCA

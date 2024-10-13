@@ -44,27 +44,79 @@ namespace SupermarkerDefinitive.Presenters
 
         private void CancelActionCA(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            CleanViewFields();
         }
 
         private void SaveCategories(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var categories = new CategoriesModel();
+            categories.Id = Convert.ToInt32(view.CategoriesId);
+            categories.Name = view.CategoriesName;
+            categories.Description = view.CategoriesDescription;
+
+            try
+            {
+                new Common.ModelDataValidation().Validate(categories);
+                if (view.IsEditCA)
+                {
+                    repository.Edit(categories);
+                    view.MessageCA = "Categories edited successfuly";
+                }
+                else
+                {
+                    repository.Add(categories);
+                    view.MessageCA = "Categories added successfuly";
+                }
+                view.IsSuccessfulCA = true;
+                loadAllCategoriesList();
+                CleanViewFields();
+            }
+            catch (Exception ex)
+            {
+                view.IsSuccessfulCA = false;
+                view.MessageCA = ex.Message;
+            }
+        }
+
+        private void CleanViewFields()
+        {
+            view.CategoriesId = "0";
+            view.CategoriesName = "";
+            view.CategoriesDescription = "";
         }
 
         private void DeleteSelectedCategories(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var categories = (CategoriesModel)CategoriesBindingSource.Current;
+
+                repository.Delete(categories.Id);
+                view.IsSuccessfulCA = true;
+                view.MessageCA = "Categories deleted successfully";
+                loadAllCategoriesList();
+            }
+            catch (Exception ex)
+            {
+                view.IsSuccessfulCA = false;
+                view.MessageCA = "An error ocurred, could not delete categories";
+            }
         }
 
         private void LoadSelectCategoriesToEdit(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var categories = (CategoriesModel)CategoriesBindingSource.Current;
+
+            view.CategoriesId = categories.Id.ToString();
+            view.CategoriesName = categories.Name.ToString();
+            view.CategoriesDescription = categories.Description.ToString();
+
+            view.IsEditCA = true;
         }
 
         private void AddNewCategories(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            view.IsEditCA = false;
         }
 
         private void SearchCategories(object? sender, EventArgs e)

@@ -65,12 +65,12 @@ namespace SupermarkerDefinitive._Repositories
         {
             var payModeList = new List<PayModeModel>();
             using (var connection = new SqlConnection(connectionString))
-            using (var command = new SqlCommand())
+            using (var cmd = new SqlCommand())
             {
                 connection.Open();
-                command.Connection = connection;
-                command.CommandText = "SELECT * FROM Paymode ORDER BY Pay_Mode_Id DESC";
-                using (var reader = command.ExecuteReader())
+                cmd.Connection = connection;
+                cmd.CommandText = "SELECT * FROM Paymode ORDER BY Pay_Mode_Id DESC";
+                using (var reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
                     {
@@ -91,7 +91,7 @@ namespace SupermarkerDefinitive._Repositories
             int payModeid = int.TryParse(value, out _) ? Convert.ToInt32(value) : 0;
             string payModeName = value;
             using (var connection = new SqlConnection(connectionString))
-            using (var cmd = connection.CreateCommand())
+            using (var cmd = new SqlCommand())
             {
                 connection.Open();
                 cmd.Connection = connection;
@@ -102,6 +102,7 @@ namespace SupermarkerDefinitive._Repositories
                 cmd.Parameters.Add("@name", SqlDbType.NVarChar).Value = payModeName;
                 using (var reader = cmd.ExecuteReader())
                 {
+                    while (reader.Read())
                     {
                         var payModeModel = new PayModeModel();
                         payModeModel.Id = (int)reader["Pay_Mode_Id"];

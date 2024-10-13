@@ -119,6 +119,7 @@
             // 
             // BtnCloseCA
             // 
+            BtnCloseCA.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnCloseCA.BackgroundImage = Properties.Resources.salida1;
             BtnCloseCA.BackgroundImageLayout = ImageLayout.Zoom;
             BtnCloseCA.Location = new Point(282, 255);
@@ -129,6 +130,7 @@
             // 
             // BtnDeleteCA
             // 
+            BtnDeleteCA.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnDeleteCA.BackgroundImage = Properties.Resources.borrar;
             BtnDeleteCA.BackgroundImageLayout = ImageLayout.Zoom;
             BtnDeleteCA.Location = new Point(282, 201);
@@ -139,6 +141,7 @@
             // 
             // BtnEditCA
             // 
+            BtnEditCA.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnEditCA.BackgroundImage = Properties.Resources.firmar;
             BtnEditCA.BackgroundImageLayout = ImageLayout.Zoom;
             BtnEditCA.Location = new Point(282, 142);
@@ -149,6 +152,7 @@
             // 
             // BtnNewCA
             // 
+            BtnNewCA.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnNewCA.BackgroundImage = Properties.Resources.comercio_electronico;
             BtnNewCA.BackgroundImageLayout = ImageLayout.Zoom;
             BtnNewCA.Location = new Point(282, 92);
@@ -161,6 +165,7 @@
             // 
             DgCategories.AllowUserToAddRows = false;
             DgCategories.AllowUserToDeleteRows = false;
+            DgCategories.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DgCategories.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DgCategories.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgCategories.Location = new Point(8, 91);
@@ -171,6 +176,7 @@
             // 
             // BtnSearchCA
             // 
+            BtnSearchCA.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnSearchCA.BackgroundImage = Properties.Resources.lupa;
             BtnSearchCA.BackgroundImageLayout = ImageLayout.Zoom;
             BtnSearchCA.Location = new Point(299, 37);
@@ -181,6 +187,7 @@
             // 
             // TxtSearchCA
             // 
+            TxtSearchCA.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             TxtSearchCA.Location = new Point(8, 43);
             TxtSearchCA.Name = "TxtSearchCA";
             TxtSearchCA.PlaceholderText = "Data to search";
@@ -256,8 +263,10 @@
             TxtCategoriesId.Location = new Point(21, 32);
             TxtCategoriesId.Name = "TxtCategoriesId";
             TxtCategoriesId.PlaceholderText = "Search Categories Id";
+            TxtCategoriesId.ReadOnly = true;
             TxtCategoriesId.Size = new Size(128, 23);
             TxtCategoriesId.TabIndex = 3;
+            TxtCategoriesId.Text = "0";
             // 
             // label5
             // 

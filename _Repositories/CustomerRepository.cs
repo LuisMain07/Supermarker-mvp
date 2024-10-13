@@ -81,65 +81,66 @@ namespace SupermarkerDefinitive._Repositories
 
         public IEnumerable<CustomersModel> GetAll()
         {
-            var Customerlist = new List<CustomersModel>();
-            using (var connection = new SqlConnection(connectionString))
-            using (var command = new SqlCommand())
-            {
-                connection.Open();
-                command.Connection = connection;
-                command.CommandText = "SELECT * FROM Customers ORDER BY Customers_Id DESC";
-                using (var reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        var customerModel = new CustomersModel();
-                        customerModel.Id = (int)reader["Customers_Id"];
-                        customerModel.Document_number = reader["Customers_Document_number"].ToString();
-                        customerModel.First_name = reader["Customers_First_Name"].ToString();
-                        customerModel.Last_name = reader["Customers_Last_Name"].ToString();
-                        customerModel.Address = reader["Customers_Address"].ToString();
-                        customerModel.Birthday = reader["Customers_Birthday"].ToString();
-                        customerModel.Phone_number = reader["Customers_Phone_number"].ToString();
-                        customerModel.Email = reader["Customers_Email"].ToString();
-                        Customerlist.Add(customerModel);
-                    }
-                }
-            }
-            return Customerlist;
-        }
-
-        public IEnumerable<CustomersModel> GetByValue(string value)
-        {
             var customerList = new List<CustomersModel>();
-            int customerId = int.TryParse(value, out _) ? Convert.ToInt32(value) : 0;
-            string customerDocument_number = value;
             using (var connection = new SqlConnection(connectionString))
-            using (var cmd = connection.CreateCommand())
+            using (var cmd = new SqlCommand())
             {
                 connection.Open();
                 cmd.Connection = connection;
-                cmd.CommandText = @"SELECT * FROM Customers
-                             WHERE Customers_Id=@Id or Customers_Document_number LIKE @Id+ '%'
-                             ORDER By Customers_Id DESC";
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = customerId;
-                cmd.Parameters.Add("@Document_number", SqlDbType.NVarChar).Value = customerDocument_number;
+                cmd.CommandText = "SELECT * FROM Customers ORDER BY Customers_Id DESC";
                 using (var reader = cmd.ExecuteReader())
                 {
+                    while (reader.Read())
                     {
-                        var customerModel = new CustomersModel();
-                        customerModel.Id = (int)reader["Customers_Id"];
-                        customerModel.Document_number = reader["Customers_Document_number"].ToString();
-                        customerModel.First_name = reader["Customers_First_name"].ToString();
-                        customerModel.Last_name = reader["Customers_Last_name"].ToString();
-                        customerModel.Address = reader["Customers_Address"].ToString();
-                        customerModel.Birthday = reader["Customers_Birthday"].ToString();
-                        customerModel.Phone_number = reader["Customers_Phone_number"].ToString();
-                        customerModel.Email = reader["Customers_Email"].ToString();
-                        customerList.Add(customerModel);
+                        var customersModel = new CustomersModel();
+                        customersModel.Id = (int)reader["Customers_Id"];
+                        customersModel.Document_number = reader["Customers_Document_number"].ToString();
+                        customersModel.First_name = reader["Customers_First_name"].ToString();
+                        customersModel.Last_name = reader["Customers_Last_name"].ToString();
+                        customersModel.Address = reader["Customers_Address"].ToString();
+                        customersModel.Birthday = reader["Customers_Birthday"].ToString();
+                        customersModel.Phone_number = reader["Customers_Phone_number"].ToString();
+                        customersModel.Email = reader["Customers_Email"].ToString();
+                        customerList.Add(customersModel);
                     }
                 }
             }
             return customerList;
+        }
+
+        public IEnumerable<CustomersModel> GetByValue(string value)
+        {
+            var customersList = new List<CustomersModel>();
+            int customersid = int.TryParse(value, out _) ? Convert.ToInt32(value) : 0;
+            string customersName = value;
+            using (var connection = new SqlConnection(connectionString))
+            using (var cmd = new SqlCommand())
+            {
+                connection.Open();
+                cmd.Connection = connection;
+                cmd.CommandText = @"SELECT * FROM Customers
+                             WHERE Customers_Id=@id or Customers_Document_number LIKE @document_number+ '%'
+                             ORDER By Customers_Id DESC";
+                cmd.Parameters.Add("@id", SqlDbType.Int).Value = customersid;
+                cmd.Parameters.Add("@document_number", SqlDbType.NVarChar).Value = customersName;
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var customersModel = new CustomersModel();
+                        customersModel.Id = (int)reader["Customers_Id"];
+                        customersModel.Document_number = reader["Customers_Document_number"].ToString();
+                        customersModel.First_name = reader["Customers_First_name"].ToString();
+                        customersModel.Last_name = reader["Customers_Last_name"].ToString();
+                        customersModel.Address = reader["Customers_Address"].ToString();
+                        customersModel.Birthday = reader["Customers_Birthday"].ToString();
+                        customersModel.Phone_number = reader["Customers_Phone_number"].ToString();
+                        customersModel.Email = reader["Customers_Email"].ToString();
+                        customersList.Add(customersModel);
+                    }
+                }
+            }
+            return customersList;
         }
     }
 }
